@@ -2,6 +2,7 @@ package store
 
 import (
 	"fmt"
+
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
@@ -18,7 +19,7 @@ func (store *Postgres) NewStore() error {
 	} else {
 		store.DB = db
 	}
-		fmt.Printf("store = %v\n", db)
+	fmt.Printf("store = %v\n", db)
 
 	return nil
 }
